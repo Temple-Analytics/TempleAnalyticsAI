@@ -11,14 +11,14 @@ Thank you for your interest in contributing to Temple Analytics! We welcome all 
 Create a personal fork of the repository on GitHub and clone it to your local machine:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/temple-analytics.git
+git clone [https://github.com/YOUR_USERNAME/temple-analytics.git](https://github.com/Temple-Analytics/TempleAnalyticsAI.git)
 cd temple-analytics
 ```
 
 Add the original repository as a remote to keep your fork updated:
 
 ```bash
-git remote add upstream https://github.com/Temple-Analytics/temple-analytics.git
+git remote add upstream [https://github.com/Temple-Analytics/temple-analytics.git](https://github.com/Temple-Analytics/TempleAnalyticsAI.git)
 ```
 
 ---
