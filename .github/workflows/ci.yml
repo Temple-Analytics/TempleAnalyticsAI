@@ -1,0 +1,56 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # Python tests
+  python-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install Python dependencies
+        run: pip install -r backend/app/requirements.txt
+      - name: Lint Python
+        run: |
+          pip install flake8
+          flake8 src/temple_analytics backend/app
+      - name: Run Python tests
+        run: |
+          pip install pytest
+          pytest backend/tests/unit --maxfail=1 --disable-warnings -q
+
+  # Go CLI build
+  go-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.18'
+      - name: Build CLI
+        run: |
+          cd cli_tools
+          go build -v -o temple-cli main.go
+
+  # Rust SDK build
+  rust-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: Build Rust SDK
+        run: |
+          cd core_sdk
+          cargo build --release

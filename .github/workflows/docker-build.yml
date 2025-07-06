@@ -1,0 +1,31 @@
+name: Docker Build & Publish
+
+on:
+  push:
+    paths:
+      - 'Docker/**'
+      - 'docker-compose.yml'
+  workflow_dispatch:
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+      - name: Build & Push Backend Image
+        run: |
+          docker build -f Docker/backend.Dockerfile -t templeanalytics/backend:latest .
+          docker push templeanalytics/backend:latest
+      - name: Build & Push Frontend Image
+        run: |
+          docker build -f Docker/frontend.Dockerfile -t templeanalytics/frontend:latest .
+          docker push templeanalytics/frontend:latest
+      - name: Build & Push Nginx Image
+        run: |
+          docker build -f Docker/nginx.Dockerfile -t templeanalytics/nginx:latest .
+          docker push templeanalytics/nginx:latest
