@@ -1,0 +1,9 @@
+# Code Owners
+
+# Define code owners by directory and file
+/.github/                   @Temple-Analytics/maintainers
+/backend/app/               @Temple-Analytics/backend-team
+/frontend/                  @Temple-Analytics/frontend-team
+/cli_tools/                 @Temple-Analytics/cli-team
+/core_sdk/                  @Temple-Analytics/sdk-team
+/microservices/             @Temple-Analytics/microservices-team
