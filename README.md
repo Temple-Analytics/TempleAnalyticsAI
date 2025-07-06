@@ -1,38 +1,38 @@
-# 🌐 Temple Analytics AI
+# Temple Analytics AI
 
-Temple Analytics is an AI-powered crypto analytics platform built on Solana 🥇. It helps traders and investors gain an edge with real-time market data, predictive AI models, and advanced trading tools. Designed for speed, scalability, and accuracy, Temple Analytics empowers both retail and institutional players.
+Temple Analytics is an AI-powered crypto analytics platform built on Solana. It helps traders and investors gain an edge with real-time market data, predictive AI models, and advanced trading tools. Designed for speed, scalability, and accuracy, Temple Analytics empowers both retail and institutional players.
 
 ---
 
-## 🚀 Features
+##  Features
 
-✅ **Real-Time Market Insights**  
+ **Real-Time Market Insights**  
 Fetch live price feeds, token metrics, and whale tracking directly from Solana blockchain.
 
-✅ **Smart Money Tracking**  
+ **Smart Money Tracking**  
 Monitor the top wallets and follow whale strategies with precision.
 
-✅ **DCA Tracker**  
+ **DCA Tracker**  
 Track large-scale Dollar-Cost-Averaging (DCA) strategies of institutional players.
 
-✅ **Token Risk Scanner**  
+ **Token Risk Scanner**  
 Instantly evaluate any token for potential risks like rug pulls or unlocked liquidity.
 
-✅ **AI-Powered Predictions**  
+ **AI-Powered Predictions**  
 Predict price trends, detect market anomalies, and score high-potential opportunities using cutting-edge ML models.
 
-✅ **Portfolio Management**  
+ **Portfolio Management**  
 Analyze your PnL, total assets, and transaction history directly in your profile.
 
-✅ **Developer SDKs & CLI Tools**  
+ **Developer SDKs & CLI Tools**  
 Integrate Temple Analytics into your apps with our SDKs (Rust/Python) or manage via CLI (Go).
 
-✅ **Staking and Governance**  
+ **Staking and Governance**  
 Stake $TA tokens for passive income and vote on platform upgrades.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend API**: Python (FastAPI), Solana RPC
 - **Core SDK**: Rust (high-performance Solana integration)
@@ -43,29 +43,29 @@ Stake $TA tokens for passive income and vote on platform upgrades.
 
 ---
 
-## 📦 Installation
+##  Installation
 
-### 🐍 Backend
+###  Backend
 ```bash
 cd backend/app
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-### 🦀 Core SDK (Rust)
+###  Core SDK (Rust)
 ```bash
 cd core_sdk
 cargo build
 ```
 
-### 🌐 Frontend
+###  Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-### 🛠️ CLI
+###  CLI
 ```bash
 cd cli_tools
 go build -o temple-cli main.go
@@ -74,13 +74,13 @@ go build -o temple-cli main.go
 
 ---
 
-## 📖 Documentation
+##  Documentation
 Full documentation is available in the [`docs/`](docs/) folder.  
-Or visit our live Docs: [https://temple-analytics.xyz/docs](https://temple-analytics.xyz/docs)
+Or visit our live Docs: [https://temple-analytics.gitbook.io/ai/](https://temple-analytics.gitbook.io/ai/)
 
 ---
 
-## 🛡️ Security
+##  Security
 Temple Analytics is built with security-first principles:
 - End-to-end encryption for user data.
 - Non-custodial – your funds stay in your wallet.
@@ -88,17 +88,17 @@ Temple Analytics is built with security-first principles:
 
 ---
 
-## 🗺️ Roadmap
-📌 **Phase 1:** Platform Launch & Core Features  
-📌 **Phase 2:** Community Growth, Staking, and Beta Programs  
-📌 **Phase 3:** Advanced AI Models, Strategic Partnerships  
-📌 **Phase 4:** Mobile App & Global Scaling  
+##  Roadmap
+ **Phase 1:** Platform Launch & Core Features  
+ **Phase 2:** Community Growth, Staking, and Beta Programs  
+ **Phase 3:** Advanced AI Models, Strategic Partnerships  
+ **Phase 4:** Mobile App & Global Scaling  
 
 Check [ROADMAP.md](docs/roadmap.md) for details.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 We welcome contributions! Check [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
 
 ---
@@ -107,11 +107,6 @@ We welcome contributions! Check [`CONTRIBUTING.md`](CONTRIBUTING.md) for guideli
 - 🌐 Website: [temple-analytics.xyz](https://temple-analytics.xyz)
 - 🐦 Twitter/X: [@tmplanalyticsai](https://x.com/tmplanalyticsai)
 - 💬 Discord: [discord.gg/ATq35fPF](https://discord.gg/ATq35fPF)
-
----
-
-## 🪙 Tokenomics
-The $TA token powers the Temple Analytics ecosystem. See [whitepaper.md](docs/whitepaper.md) for details.
 
 ---
 
